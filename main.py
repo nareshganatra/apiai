@@ -5,7 +5,6 @@ import json
 import logging as l
 
 app = Flask(__name__)
-app.config['DEBUG'] = True
 
 # Note: We don't need to call run() since our application is embedded within
 # the App Engine WSGI application server.
@@ -14,37 +13,31 @@ app.config['DEBUG'] = True
 @app.route('/')
 def hello():
     """Return a friendly HTTP greeting."""
-    print "there u go"
+    l.info("reached the hello() module...")
+
     return 'Hello my Beaturiful World!\n'
 
 
 @app.route('/apiai', methods=['POST'])
-def yello():
-    """Return a friendly HTTP greeting."""
-    l.info("11")
-    #print "1"
-    speech = "This is a reponse from GAE !!"
-    #print "2"
-    l.info("22")
+def apiai_response():
+    """Return a static message to api.ai."""
+    """Naresh  Ganatra"""
+
+    l.info("reached apaai_response module ...... ")
+
+    speech = "This is a reponse from GAE !! " 
+
     my_response = {
      "speech" : speech,
      "displayText " : speech,
     } 
-    l.info("33")
-    #print "3"
+
     res = json.dumps(my_response)
-    l.info("44")
-    #print "4"
     r = make_response(res)
-    l.info("55")
-    #print "5"
-    #print r
-    #print type(r)
     r.headers['Content-Type'] = 'application/json'
-    l.info("66")
-    #print  type(r)
-    #print "5"
-    l.info("77")
+
+    l.info("Exiting the  apaai_response module ...... ")
+
     return r
 
 
