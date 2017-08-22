@@ -1,5 +1,16 @@
 ## Python Flask Skeleton for Google App Engine
 
+oringally taken from the url below 
+https://github.com/GoogleCloudPlatform/appengine-try-python-flask.git
+## Author
+Logan Henriquez and Johan Euphrosine 
+
+And then added code/module to work with api.ai
+##Author 
+Naresh Ganatra
+
+===============================================
+
 ![status: inactive](https://img.shields.io/badge/status-inactive-red.svg)
 
 
@@ -77,8 +88,4 @@ See [CONTRIB.md](CONTRIB.md)
 
 ## Licensing
 See [LICENSE](LICENSE)
-
-## Author
-Logan Henriquez and Johan Euphrosine and Naresh Ganatra
-
 
