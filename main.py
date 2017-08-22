@@ -14,8 +14,8 @@ app = Flask(__name__)
 def hello():
     """Return a friendly HTTP greeting."""
     l.info("reached the hello() module...")
-
-    return 'Hello my Beaturiful World!\n'
+    #test to see this
+    return 'Hello  Beautiful World!\n'
 
 
 @app.route('/apiai', methods=['POST'])
