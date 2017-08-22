@@ -14,7 +14,7 @@ app = Flask(__name__)
 def hello():
     """Return a friendly HTTP greeting."""
     l.info("reached the hello() module...")
-    #test to see this
+
     return 'Hello  Beautiful World!\n'
 
 
