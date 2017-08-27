@@ -1,6 +1,6 @@
 ## api.ai webhook on Google App Engine
 
-Python Flas Skeleton taken from https://github.com/GoogleCloudPlatform/appengine-try-python-flask.git
+Python Flask Skeleton taken from https://github.com/GoogleCloudPlatform/appengine-try-python-flask.git
 Goal is to have this working to fetch data from Google BigQuery Public Dataset as seen in my video demo .
 I will get to that in the next few days
 
